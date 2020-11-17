@@ -7,6 +7,7 @@ using XPlatformChat.WebApi.Data;
 
 namespace XPlatformChat.WebApi.Hubs
 {
+    [Authorize]
     public class ChatHub : Hub
     {
         private readonly ChatDbContext _context;
